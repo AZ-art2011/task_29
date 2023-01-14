@@ -1,0 +1,12 @@
+﻿int[] array = GetNumber(8);
+Console.WriteLine($" [ {String.Join(", ", array)}]");
+
+int [] GetNumber(int size)
+{
+    int [] result = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        result[i] = new Random().Next(65);
+    }
+    return result;
+}
